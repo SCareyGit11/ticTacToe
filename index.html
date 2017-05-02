@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Tic Tac Toe</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main2.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <h1> Tic Tac Toe </h1>
+  <div class="container">
 
-  <table>
-    <tr>
-      <td><button id="0" class="board"></button></td>
-      <td><button id="1" class="board"></button></td>
-      <td><button id="2" class="board"></button></td>
-    </tr>
-    <tr>
-      <td><button id="3" class="board"></button></td>
-      <td><button id="4" class="board"></button></td>
-      <td><button id="5" class="board"></button></td>
-    </tr>  
-    <tr>
-      <td><button id="6" class="board"></button></td>
-      <td><button id="7" class="board"></button></td>
-      <td><button id="8" class="board"></button></td>
-    </tr>  
-  </table>
+    <div class="row">
+      <span class="col-sm-4"></span>
+      <h1 class="col-sm-4"> Tic Tac Toe </h1>
+      <span class="col-sm-4"></span>
+    </div>
 
-  <h1 id="result"></h1> 
-  <button id="reset">Reset</button>
+    
+    <div class="row">
+      <h1 id="result" class="col-sm-3"></h1>
+
+      <table class="col-sm-4">
+        <tr class="border-bottom">
+          <td class="border-right"><button id="0" class="board"></button></td>
+          <td class="border-right"><button id="1" class="board"></button></td>
+          <td><button id="2" class="board"></button></td>
+        </tr>
+        <tr class="border-bottom">
+          <td class="border-right"><button id="3" class="board"></button></td>
+          <td class="border-right"><button id="4" class="board"></button></td>
+          <td><button id="5" class="board"></button></td>
+        </tr>  
+        <tr>
+          <td class="border-right"><button id="6" class="board"></button></td>
+          <td class="border-right"><button id="7" class="board"></button></td>
+          <td><button id="8" class="board"></button></td>
+        </tr>  
+      </table>
+
+      <span class="col-sm-5"></span>
+
+    </div> 
+
+    <div class="row">
+      <span class="col-sm-5"></span>
+      <img id="reset" class="col-sm-3" src="http://images.clipartpanda.com/eraser-clipart-black-and-white-13471970421371056508erasers-hi.png"  width="176" height="100" style="margin-top: 12px;" alt="Image result for eraser image">
+      <span class="col-sm-4"></span>
+    </div>
+
+  </div>
 </body>
 </html>

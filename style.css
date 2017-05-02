@@ -1,4 +1,29 @@
+body {
+    background-image: url("paper.jpg");
+    font-family: 'Rancho', Helvetica, sans-serif;
+}
+
+
 .board{
-	width: 32px;
-	height: 32px;
+	width: 88px;
+	height: 88px;
+	font-size: 32px;
+}
+
+td{
+	width: 96px;
+	height: 96px;
+	padding-left: 17px;
+}
+
+.border-bottom{
+	border-bottom: 8px solid gray;
+}
+
+.border-right{
+	border-right: 8px solid gray;
+}
+
+#reset{
+	padding-top: 16px;
 }
